@@ -3,7 +3,7 @@ import getJoke from '../api/jokeData';
 import Joker from '../components/JokeGenerator';
 
 function Home() {
-  const [bttnText, setBttnText] = useState('Get A Joke');
+  const [bttnText, setBttnText] = useState('Get A Joke'); // eslint-disable-line
   const [joke, setJoke] = useState({});
 
   const getAJoke = () => {
