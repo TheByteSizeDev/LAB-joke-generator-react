@@ -15,14 +15,13 @@ function Home() {
         },
       );
     });
+
+    setBttnText('Get Punchline');
   };
 
   return (
     <>
-      <h1>{joke.setup}</h1>
-      <h2>{joke.punchline}</h2>
-      <button type="button" onClick={getAJoke}>{bttnText}</button>
-      <Joker joke={joke} bttnText={bttnText} />
+      <Joker joke={joke} getAJoke={getAJoke} bttnText={bttnText} setBttnText={setBttnText} />
     </>
   );
 }
